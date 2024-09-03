@@ -1,0 +1,224 @@
+    
+    /* * */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root{
+            font-size: 62.5%;
+            --title: #656565;
+            --scrollbar-hover: #525252;
+            --back: #333333;
+            --head: #252525;
+            --stuff1: #454545;
+            --stuff2: #303030;
+        }
+
+        :focus{
+            outline: 1px solid #00fff0;
+            outline-offset: 3px;
+        }
+
+        ::-webkit-scrollbar {
+            position: absolute;
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--title);
+            border-radius: 50px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--scrollbar-hover); 
+        }
+        
+    /* body */
+
+        body{
+            background: var(--back);
+            min-height: 100vh;
+            max-width: 100%;
+            font-size: 2rem;
+            overflow-y: scroll;
+        }
+
+        button{
+            cursor: pointer;
+        }
+
+    /* header */
+
+        header{
+            padding: 2vh 15vw 0 15vw;
+        }
+
+        .header-content{
+            padding: .8rem;
+            background: var(--head);
+            border: 2px solid #000000;
+            border-radius: 2rem;
+            min-height: 10vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -10px 10px 7.5px #202020;
+        }
+
+        #header-h1{
+            margin: 0 auto 3vh auto;
+            font-size: 5rem;
+            font-family: Trattatello;
+            font-style: oblique;
+            color: var(--title);
+        }
+
+        .header-buttons-div{
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header-input, .header-button{
+            margin: 0 .2vw;
+            background: #454545;
+            color: #f0f0f0;
+            border-color: #000000;
+        }
+
+        .header-input{
+            padding: 1rem 2rem;
+            font-size: 2.25rem;
+            flex: 4;
+        }
+
+        .header-button{
+            border: 2px solid inherit;
+            font-weight: 500;
+            font-size: 2.25rem;
+            flex: 1;
+        }
+
+        .header-button:hover{
+            background-color: var(--back);
+        }
+
+        #inserisci{
+            border-color: greenyellow;
+        }
+
+        #pulisci{
+            border-color: red;
+        }
+
+    /* main */
+    
+        main{
+            color: white;
+        }  
+
+        .header-refresh{
+            position: absolute;
+            left: 87%;
+            top: 5%;
+        }
+
+        #header-refresh-button{
+            padding: .5rem;
+            background: var(--head);
+            color: var(--title);
+            border-color: #000000;
+            font-size: 2rem;
+        }
+
+        .main-nostuff{
+            background: var(--title);
+            padding: 1rem;
+            border: 2px solid var(--head);
+            border-left: 0;
+            border-right: 0;
+            font-size: 3rem;
+        }
+
+        .main-nostuff p{
+            margin: 0 auto;
+        }
+
+        #main-with-stuff{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 20vw;
+            font-size: 2.25rem;
+        }
+
+        .main-section, .main-section2{
+            display: flex;
+            flex-direction: row;
+            border-radius: 4px;
+            border: 1px solid black;
+            width: 100%;
+            margin: .5vh 0;
+        }
+
+        .main-section{
+            background: var(--stuff1);
+        }
+
+        .main-section2{
+            background: var(--stuff2);
+        }
+
+        .main-section article, .main-section2 article{
+            display: flex;
+            padding: 1rem;
+            min-height: 3vh;
+        }
+        
+        .stuff-title{
+            flex: 3;
+        }
+
+        .title-p{
+            margin: auto 0;
+        }
+
+        .button-done{
+            border-color: #a0ff00;
+        }
+
+        .button-x{
+            border-color: #ff0000;
+        }
+
+        .button-done:hover, .button-x:hover{
+            background: #161616;
+        }
+
+        .buttons{
+            margin: 0 auto;
+            padding: .5rem;
+            min-height: 1vh;
+            min-width: 5vh;
+            font-weight: 500;
+            font-size: 2.25rem;
+            background: var(--head);
+            color: white;
+        }
+
+        .buttons-space{
+            flex: 1;
+            border-left: 1px solid #000000;
+        }
+
+        .deleted{
+            display: none;
+        }
+
+    /* footer */
+    
+        footer{
+            
+        }
